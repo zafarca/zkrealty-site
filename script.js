@@ -1,24 +1,3 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-const menu = document.querySelector('.menu');
-const nav = document.querySelector('.site-header nav');
-menu.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menu.setAttribute('aria-expanded', String(open));
-});
-nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
-const calculator = document.getElementById('mortgageCalculator');
-function calculateMortgage(){
-  if(!calculator) return;
-  const price = Number(document.getElementById('homePrice').value) || 0;
-  const down = Number(document.getElementById('downPayment').value) || 0;
-  const annual = Number(document.getElementById('interestRate').value) || 0;
-  const years = Number(document.getElementById('amortization').value) || 25;
-  const principal = Math.max(price-down,0);
-  const n = years*12;
-  const r = annual/100/12;
-  const payment = r === 0 ? principal/n : principal*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
-  document.getElementById('monthlyPayment').textContent = payment.toLocaleString('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0});
-  document.getElementById('mortgageAmount').textContent = 'Mortgage amount: '+principal.toLocaleString('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0});
-}
-calculator?.addEventListener('input', calculateMortgage);
-calculateMortgage();
+const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.main-nav');toggle?.addEventListener('click',()=>{nav.classList.toggle('open');toggle.setAttribute('aria-expanded',nav.classList.contains('open'))});document.querySelectorAll('.main-nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+function mortgage(){const price=+document.getElementById('price').value||0,down=+document.getElementById('down').value||0,annual=+document.getElementById('rate').value||0,years=+document.getElementById('years').value||25,p=Math.max(0,price-down),r=annual/100/12,n=years*12;let payment=r? p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):p/n;document.getElementById('payment').textContent=payment.toLocaleString('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0})}
+document.getElementById('calculate')?.addEventListener('click',mortgage);['price','down','rate','years'].forEach(id=>document.getElementById(id)?.addEventListener('input',mortgage));mortgage();document.getElementById('year').textContent=new Date().getFullYear();

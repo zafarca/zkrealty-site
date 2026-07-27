@@ -1,10 +1,9 @@
-# ZK Realty Inc. website
-Static website for Zafar Iqbal, serving Windsor and Essex County.
+# ZK Realty Inc. Website
+Premium static website for Zafar Iqbal, serving Windsor and Essex County.
+
+## Publish with GitHub Pages
+Settings → Pages → Deploy from a branch → main → /(root).
 
 ## Contact
-- Phone: 519-562-9636
-- Email: zkrealtyinc@gmail.com
-- Domain: zkrealtyinc.com
-
-## Hosting
-Designed for GitHub Pages. The included CNAME file points to zkrealtyinc.com.
+519-562-9636 | zkrealtyinc@gmail.com
+Brokerage: King Realty Inc.
