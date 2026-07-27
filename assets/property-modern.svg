@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+<defs><linearGradient id="s" x2="0" y2="1"><stop stop-color="#9fc7e9"/><stop offset="1" stop-color="#eef5fb"/></linearGradient><linearGradient id="l"><stop stop-color="#51794c"/><stop offset="1" stop-color="#1f452e"/></linearGradient></defs>
+<rect width="1200" height="760" fill="url(#s)"/><circle cx="990" cy="120" r="75" fill="#ffe3a2"/>
+<rect y="540" width="1200" height="220" fill="url(#l)"/><path d="M0 610 Q250 550 500 620T1200 600V760H0Z" fill="#315d3d"/>
+<path d="M180 350 L500 140 L820 350 Z" fill="#22374f"/><path d="M560 350 L835 205 L1095 350 Z" fill="#15283d"/>
+<rect x="220" y="345" width="800" height="260" rx="4" fill="#e8e3d9"/><rect x="260" y="400" width="165" height="110" fill="#193451" stroke="#d3ae54" stroke-width="12"/>
+<rect x="455" y="400" width="165" height="110" fill="#193451" stroke="#d3ae54" stroke-width="12"/><rect x="675" y="380" width="120" height="225" fill="#273b50"/>
+<rect x="820" y="405" width="170" height="200" fill="#34485a"/><g stroke="#617486" stroke-width="8"><line x1="825" y1="445" x2="985" y2="445"/><line x1="825" y1="490" x2="985" y2="490"/><line x1="825" y1="535" x2="985" y2="535"/></g>
+<path d="M120 640H1100" stroke="#c9c2b6" stroke-width="55"/><path d="M120 640H1100" stroke="#eee9df" stroke-width="42"/>
+</svg>
